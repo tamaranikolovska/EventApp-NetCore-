@@ -1,0 +1,11 @@
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\bin\Debug\netcoreapp2.0\NetCoreApp.deps.json
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\bin\Debug\netcoreapp2.0\NetCoreApp.runtimeconfig.json
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\bin\Debug\netcoreapp2.0\NetCoreApp.runtimeconfig.dev.json
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\bin\Debug\netcoreapp2.0\NetCoreApp.dll
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\bin\Debug\netcoreapp2.0\NetCoreApp.pdb
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\obj\Debug\netcoreapp2.0\NetCoreApp.csprojResolveAssemblyReference.cache
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\obj\Debug\netcoreapp2.0\NetCoreApp.csproj.CoreCompileInputs.cache
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\obj\Debug\netcoreapp2.0\NetCoreApp.AssemblyInfoInputs.cache
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\obj\Debug\netcoreapp2.0\NetCoreApp.AssemblyInfo.cs
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\obj\Debug\netcoreapp2.0\NetCoreApp.dll
+c:\users\tamara\source\repos\NetCoreApp\NetCoreApp\obj\Debug\netcoreapp2.0\NetCoreApp.pdb

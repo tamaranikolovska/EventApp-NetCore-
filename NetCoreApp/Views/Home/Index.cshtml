@@ -1,0 +1,153 @@
+﻿@model IEnumerable<NetCoreApp.Models.Event>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .maindiv {
+            margin-left: 200px;
+            border-style: inset;
+            border: 2px solid gray;
+            border-radius: 25px;
+            margin-right: 320px;
+        }
+
+        .div1 {
+            margin-left: 10px;
+        }
+
+        .div2 {
+            float: right;
+            margin-top: -125px;
+            margin-right: 70px;
+        }
+
+        .fromclass {
+            margin-left: 70px;
+            margin-top: -28px;
+        }
+
+        .toclass {
+            margin-left: 70px;
+            margin-top: -28px;
+        }
+
+
+        .descclass {
+            margin-left: 100px;
+            margin-top: -28px;
+        }
+
+
+        .totalspaceclass {
+            margin-left: 100px;
+            margin-top: -28px;
+        }
+
+        
+
+        .remainigclass {
+            margin-left: 120px;
+            margin-top: -30px;
+        }
+
+        .takesplaceclass {
+            margin-left: 80px;
+            margin-top: -30px;
+        }
+
+        .priceclass {
+            margin-left: 50px;
+            margin-top: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="~/images/la.jpg" alt="Concerts">
+            </div>
+
+            <div class="item">
+                <img src="~/images/chicago.jpg" alt="Bar parties">
+            </div>
+
+            <div class="item">
+                <img src="~/images/ny.jpg" alt="Fashion events">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    @foreach (var item in Model) {
+    <div class="maindiv">
+        <div class="div1">
+            <div class="info1">
+                <p>@Html.DisplayNameFor(model => model.Datefrom)</p>
+                <p class="fromclass">@Html.DisplayFor(modelItem => item.Datefrom)</p>
+            </div>
+            <div class="info2">
+                <p class="toclass1">@Html.DisplayNameFor(model => model.DateTo)</p>
+                <p class="toclass">@Html.DisplayFor(modelItem => item.DateTo)</p>
+            </div>
+            <div class="info3">
+                <p class="descclass1">@Html.DisplayNameFor(model => model.Description)</p>
+                <p class="descclass">@Html.DisplayFor(modelItem => item.Description)</p>
+            </div>
+            <div class="info4">
+                <p class="totalspaceclass1">@Html.DisplayNameFor(model => model.TotalSpace)</p>
+                <p class="totalspaceclass">@Html.DisplayFor(modelItem => item.TotalSpace)</p>
+            </div>
+        </div>
+
+        <div class="div2">
+            <div class="info11">
+                <p>@Html.DisplayNameFor(model => model.RemainingSpace)</p>
+                <p class="remainigclass">@Html.DisplayFor(modelItem => item.RemainingSpace)</p>
+            </div>
+            <div class="info22">
+                <p>@Html.DisplayNameFor(model => model.Takesplace)</p>
+                <p class="takesplaceclass">@Html.DisplayFor(modelItem => item.Takesplace)</p>
+            </div>
+            <div class="info33">
+                <p>@Html.DisplayNameFor(model => model.Price)</p>
+                <p class="priceclass">@Html.DisplayFor(modelItem => item.Price)</p>
+            </div>
+        </div>
+    </div>
+    <br />
+    }
+</body>
+</html>

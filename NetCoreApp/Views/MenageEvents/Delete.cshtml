@@ -1,0 +1,78 @@
+﻿@model NetCoreApp.Models.Event
+
+@{
+    Layout = "~/Views/Shared/_MenuLogedInAdmin.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DeleteConfirmed</title>
+</head>
+<body>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Datefrom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Datefrom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateTo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalSpace)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalSpace)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RemainingSpace)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RemainingSpace)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Takesplace)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Takesplace)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Administrator)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Administrator.Email)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete" asp-controller="MenageEvents" method="post">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="ShowAllEvents" asp-controller="MenageEvents">Back to List</a>
+    </form>
+</div>
+</body>
+</html>
